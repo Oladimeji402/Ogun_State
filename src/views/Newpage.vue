@@ -53,17 +53,23 @@
 
   <hr style="border: 2px solid #d9d9d9" />
 
-  <section>
+  <!-- <section>
     <latest />
+  </section> -->
+
+  <section>
+    <NewsCardLayout />
   </section>
 </template>
 
 <script>
-import latest from "../views/latestNewView.vue"
+// import latest from "../views/latestNewView.vue"
+import NewsCardLayout from "../views/news.vue"
 export default {
   name: "NewsPage",
   components: {
-    latest
+    // latest,
+    NewsCardLayout,
   }
 };
 </script>
