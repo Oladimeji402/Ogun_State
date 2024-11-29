@@ -76,29 +76,29 @@ Name: 'Footer',
 
 <style scoped>
  .ogun-imgs {  
-  text-align: center; /* Center the content */  
-  margin-bottom: 20px; /* Optional spacing below the image */  
+  text-align: center; 
+  margin-bottom: 20px; 
 }  
 
 .ogun-image-container {  
-  position: relative; /* This allows absolute positioning of child elements */  
+  position: relative; 
 }  
 
 .ogun-imgs img {  
   max-width: 100%;  
   height: auto; 
-  margin-top: -200px;
+  margin-top: -250px;
 }  
 
 .ogun-imgs h3 {  
-  position: absolute; /* Allow h3 to overlap the image */  
-  top: -40%; /* Center vertically */  
-  left: 50%; /* Center horizontally */  
-  transform: translate(-50%, -50%); /* Adjust position to center text */  
-  color: black; /* Set text color */  
-  font-size: 4rem; /* Adjust font size as needed */  
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional: add text shadow for better readability */  
-  z-index: 1; /* Make sure text is above the image */  
+  position: absolute; 
+  top: -40%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: black;
+  font-size: 4rem; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+  z-index: 1; 
 }
 .links-tag  a{
 text-decoration: none;
@@ -110,13 +110,19 @@ color: #fff;
 }
 @media (max-width: 576px){
   .ogun-imgs {  
-      text-align: center; /* Center text for mobile */  
-      margin-top: -30px; /* May need to adjust this as per your layout */  
+      text-align: center;
+      margin-top: -5px;  
   }  
 
   .ogun-imgs img {  
-      max-width: 90%; /* Optional: make the image width slightly less on mobile */  
+      max-width: 90%;  
   }
-
 }
+
+ @media (max-width: 768px) {
+    .ogun-imgs h3{
+        margin-top: -50px;
+        font-size: 1.06rem !important;
+    }
+} 
 </style>

@@ -6,8 +6,30 @@
         <!-- Logo Section -->
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img class="img me-2" src="/src/assets/images/logo.png" alt="" /> Ogun
-          State
+          State <br> Government
         </a>
+        <li class="nav-item d-block d-md-none d-lg-none">
+              <div class="nav-link">
+                <!-- Search Icon -->
+                <button
+                  @click="toggleSearchInput"
+                  class="btn btn-link text-dark"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <!-- Conditional Rendering of Search Input -->
+                <transition name="fade">
+                  <input
+                    v-if="showSearchInput"
+                    type="text"
+                    class="form-control"
+                    placeholder="Search..."
+                    v-model="searchQuery"
+                  />
+                </transition>
+              </div>
+            </li>
         <!-- Navbar Toggler -->
         <button
           class="navbar-toggler"
@@ -58,16 +80,16 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-block d-md-block">
               <RouterLink to="/" class="nav-link">About</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink to="/newsPage" class="nav-link">News</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink to="/" class="nav-link">Contact</RouterLink>
+              <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-md-block d-lg-block">
               <div class="nav-link">
                 <!-- Search Icon -->
                 <button

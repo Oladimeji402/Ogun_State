@@ -1,11 +1,26 @@
 <template>
   <div class="container mt-5">
-    <div class="d-flex justify-content-between mb-3">
-     <h3 class="text-success">Meet Our Executives</h3>
-     <button class="btn btn-md border border-3 border-success text-success">View more</button>
+    <div
+      class="d-flex justify-content-between mb-3"
+      data-aos="fade-down"
+      data-aos-duration="800"
+    >
+      <h3 class="text-success">Meet Our Executives</h3>
+      <button
+        class="btn btn-md border border-3 border-success text-success"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        View more
+      </button>
     </div>
     <div class="row">
-      <div class="col-md-4 mt-3">
+      <div
+        class="col-md-4 mt-3"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >
         <div class="card">
           <img
             src="/src/assets/images/Dapo.png"
@@ -19,7 +34,12 @@
         </div>
       </div>
 
-      <div class="col-md-4 mt-3">
+      <div
+        class="col-md-4 mt-3"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
         <div class="card">
           <img
             src="/src/assets/images/arigbabu.png"
@@ -33,7 +53,12 @@
         </div>
       </div>
 
-      <div class="col-md-4 mt-3">
+      <div
+        class="col-md-4 mt-3"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+        data-aos-delay="300"
+      >
         <div class="card">
           <img
             src="/src/assets/images/Frame 15 (2).png"
@@ -50,14 +75,14 @@
     </div>
   </div>
 </template>
-  
-  <script>
+
+<script>
 export default {
   name: "MeetExecutives",
 };
 </script>
-  
-  <style scoped>
+
+<style scoped>
 .card {
   position: relative;
   height: 100%;
@@ -85,4 +110,3 @@ export default {
   color: #28a745 !important;
 }
 </style>
-  

@@ -103,6 +103,12 @@ section{
   }
 }
 
+@media (width < 760px) {
+  .home {
+    height: 50vh;
+  }
+}
+
 .animated-button {
   position: relative;
   overflow: hidden;
