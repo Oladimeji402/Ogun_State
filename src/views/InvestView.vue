@@ -59,6 +59,18 @@ export default {
   background-color: #174E2C;
   opacity: 0.6;
 }
+@media (max-width: 768px) {
+  .invest-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #174E2C;
+  opacity: 0.6;
+}
+}
 .container {
   position: relative;
   z-index: 1;

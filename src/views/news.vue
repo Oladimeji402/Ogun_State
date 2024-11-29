@@ -86,13 +86,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
   }
   
   .news-card {
+    flex: 1 1 calc(33.33% - 20px); 
     width: 100%;
-    max-width: 300px;
+    border-radius: 5px;
+    max-width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -108,7 +110,7 @@
   .news-image {
   position: relative;
   width: 100%;
-  height: 200px; /* Set a fixed height */
+  height: 200px; 
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -117,7 +119,7 @@
   .news-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  object-fit: cover;
   display: block;
 }
   

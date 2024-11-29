@@ -87,9 +87,10 @@ Name: 'FooterView',
 
 .ogun-imgs img {  
   max-width: 100%; 
-  width: 300px; 
+  width: 350px; 
   height: auto; 
   margin-top: -220px;
+  opacity: 0.9;
 }  
 
 .ogun-imgs h3 {  

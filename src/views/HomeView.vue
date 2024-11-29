@@ -108,6 +108,11 @@ section{
     height: 50vh;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .home {
+    height: 50vh;
+  }
+}
 
 .animated-button {
   position: relative;

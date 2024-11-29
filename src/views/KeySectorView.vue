@@ -118,7 +118,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 128, 0, 0.6);
+  background-color: #174e2cc8;
   display: flex;
   justify-content: center;
   align-items: center;

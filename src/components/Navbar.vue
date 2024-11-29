@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid mx-md-5 bg-light">
+      <div class="container-fluid mx-md-5 bg-light p-1">
         <!-- Logo Section -->
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img class="img me-2" src="/src/assets/images/logo.png" alt="" /><span class="font"> Ogun
@@ -142,7 +142,7 @@ export default {
 
 <style scoped>
 .font {
-  font-size: 16px;
+  font-size: 14px;
 }
 .img {
   width: 50px;
