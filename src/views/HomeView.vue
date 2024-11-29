@@ -90,8 +90,8 @@ section{
   object-fit: cover;
 }
 @media (min-width: 1024px) {
-  .mt {
-    margin-top: 100px;
+  .mt { 
+     margin-top: 100px;
   }
   .home {
     background: url(../assets/images/home.png);

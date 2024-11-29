@@ -1,12 +1,11 @@
 <template>
   <header>
-       
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container p-2 bg-light">
+      <div class="container-fluid mx-md-5 bg-light">
         <!-- Logo Section -->
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img class="img me-2" src="/src/assets/images/logo.png" alt="" /> Ogun
-          State <br> Government
+          <img class="img me-2" src="/src/assets/images/logo.png" alt="" /><span class="font"> Ogun
+          State <br> Government </span>
         </a>
         <li class="nav-item d-block d-md-none d-lg-none">
               <div class="nav-link">
@@ -142,6 +141,9 @@ export default {
 </script>
 
 <style scoped>
+.font {
+  font-size: 16px;
+}
 .img {
   width: 50px;
 }
@@ -162,5 +164,8 @@ input[type="text"]:focus {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
   opacity: 0;
+}
+.navbar{
+  margin-top: -15px;
 }
 </style>

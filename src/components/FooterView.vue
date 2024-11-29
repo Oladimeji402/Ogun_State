@@ -3,8 +3,8 @@
       <div class="container-fluid p-5 ogun-links text-white">  
   <div class="ogun-imgs">  
       <div class="ogun-image-container">  
-          <img src="../assets/images/map1.png" alt="" />  
-          <h3 class="fs-2">OMO OGUN ISEYA</h3>  
+          <img src="../assets/images/mapR.png" alt="" />  
+          <h3 class="fs-1">OMO OGUN ISEYA</h3>  
       </div>  
   </div>  
   <div class="row">  
@@ -70,7 +70,7 @@
 
 <script>
 export default {
-Name: 'Footer',
+Name: 'FooterView',
 }
 </script>
 
@@ -82,17 +82,19 @@ Name: 'Footer',
 
 .ogun-image-container {  
   position: relative; 
+  margin-top: -30px;
 }  
 
 .ogun-imgs img {  
-  max-width: 100%;  
+  max-width: 100%; 
+  width: 300px; 
   height: auto; 
-  margin-top: -250px;
+  margin-top: -220px;
 }  
 
 .ogun-imgs h3 {  
   position: absolute; 
-  top: -40%; 
+  top: -50%;
   left: 50%;
   transform: translate(-50%, -50%); 
   color: black;
@@ -115,7 +117,7 @@ color: #fff;
   }  
 
   .ogun-imgs img {  
-      max-width: 90%;  
+      max-width: 80%;  
   }
 }
 

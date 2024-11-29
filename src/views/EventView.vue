@@ -1,5 +1,5 @@
 <template>
-    <section class="position-relative mt-4">
+    <section class="position-relative mt-4 mb-3">
       <img src="../assets/images/Event.png" alt="">
       <div class="overlay-content d-flex flex-column justify-content-between">
         <h2 class="text-light text-center">Event and Project</h2>
@@ -26,12 +26,12 @@
   
   .overlay-content {
     position: absolute;
-    inset: 0; /* Set top, right, bottom, and left to 0 */
+    inset: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px; /* Adjust padding as needed for spacing */
+    padding: 20px; 
   }
   
   .overlay-content h2 {
