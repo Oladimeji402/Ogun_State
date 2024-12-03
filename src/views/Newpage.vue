@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="container-fluid mt-3">
+  <div class="container-fluid  mt-3">
   <div class="news">
      <div class="container">
     <div class="row">

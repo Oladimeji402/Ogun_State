@@ -1,7 +1,7 @@
 <template>
   <div class="invest-background p-5">
     <div class="container text-light">
-      <h1 class="text-center h1"><span class="mark">|</span>Invest in Ogun-State</h1>
+      <h1 class="text-center h1">Invest in Ogun-State</h1>
       <p class="text-center fs-md-2">
         .....Agriculture, Manufacturing, Innovation and more
       </p>
@@ -27,6 +27,7 @@ export default {
 };
 </script>
 <style scoped>
+
 .mark{
   /* font-weight: 700; */
   background-color: transparent;
@@ -35,6 +36,7 @@ export default {
 .h1 {
   font-size: 80px;
   font-weight: 800;
+  border-left:7px solid green;
 }
 @media (max-width:768px) {
   .h1 {

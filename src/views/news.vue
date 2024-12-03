@@ -1,4 +1,5 @@
 <template>
+  <div class="container-fluid">
     <div class="news-card-layout">
       <div class="news-card" v-for="(news, index) in newsList" :key="index">
         <div class="news-image">
@@ -12,6 +13,7 @@
           <a href="#" class="text-success links">Read More</a>
         </div>
       </div>
+    </div>
     </div>
   </template>
   

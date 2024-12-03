@@ -13,16 +13,16 @@
               <img src="../assets/images/logo.png" alt="" style="width: 10%" />  
               <p>Ogun State Government</p>  
           </div>  
-          <p>  
+          <p class="ms-3">  
               It is peopled predominantly by the Egbas, Ijebus, Yewas, Remos, and Aworis; - who belong to the main Yoruba ethnic group. It also has sub-groups, namely, Ketu, Ikale, Ilaje, Ohori, Anago, and Egun. There are also significant numbers of Nigerians from other parts of the country as well as foreign nationals resident in the State. Ogun State welcomes you!  
           </p>  
-          <h3>Contact Us</h3>  
-          <p>  
+          <h3 class="ms-3">Contact Us</h3>  
+          <p class="ms-3">  
               <i class="fa-solid fa-location-dot fa-xs"></i> Government House  
               complex, Oke-Mosan, Abeokuta, Ogun State 
           </p>  
-          <p><i class="fa-solid fa-envelope fa-xs"></i> info@ogunstate.gov.ng</p>  
-          <p><i class="fa-solid fa-phone fa-xs"></i> (234) 7041-604-239</p>  
+          <p class="ms-3"><i class="fa-solid fa-envelope fa-xs"></i> info@ogunstate.gov.ng</p>  
+          <p class="ms-3"><i class="fa-solid fa-phone fa-xs"></i> (234) 7041-604-239</p>  
       </div>  
       <div class="col-md-3">  
           <h2 class="mt-2">State</h2>  
@@ -124,8 +124,20 @@ color: #fff;
 
  @media (max-width: 768px) {
     .ogun-imgs h3{
-        margin-top: -50px;
-        font-size: 1.06rem !important;
+        margin-top: -20px;
+        font-size: 1.089rem !important;
+    }
+    .ogun-imgs img{
+        margin-top: -150px;
     }
 } 
+@media (min-width: 769px) and (max-width: 1024px){
+    .ogun-imgs h3{
+        margin-top: -90px !important;
+        font-size: 1.089rem !important;
+    }
+    .ogun-imgs img{
+        margin-top: -150px;
+    }
+}
 </style>

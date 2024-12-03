@@ -79,8 +79,8 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item d-none d-lg-block d-md-block">
-              <RouterLink to="/" class="nav-link">About</RouterLink>
+            <li class="nav-item">
+              <RouterLink to="/about" class="nav-link">About</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink to="/newsPage" class="nav-link">News</RouterLink>
@@ -141,6 +141,9 @@ export default {
 </script>
 
 <style scoped>
+*{
+  margin: 0;
+}
 .font {
   font-size: 14px;
 }
@@ -167,5 +170,14 @@ input[type="text"]:focus {
 }
 .navbar{
   margin-top: -15px;
+}
+@media (min-width: 768px) {
+  .position{
+  position: fixed;
+  z-index: 1000;
+  left: 30px;
+  right: 30px;
+  top: 0;
+}
 }
 </style>
