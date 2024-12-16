@@ -78,8 +78,8 @@ export default {
 .news {
   background: linear-gradient(-90deg, #0000004D 30%, #00640099 60%), url(../assets/images/New1.png) no-repeat center center/cover;
   width: 100%;
-  height: auto;
-  padding-top: 56.25%;
+  height: 100vh;
+  padding-top: 25%;
 }
 
 @media (max-width: 767px) {

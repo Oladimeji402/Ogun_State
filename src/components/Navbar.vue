@@ -4,31 +4,32 @@
       <div class="container-fluid mx-md-5 bg-light p-1">
         <!-- Logo Section -->
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img class="img me-2" src="/src/assets/images/logo.png" alt="" /><span class="font"> Ogun
-          State <br> Government </span>
+          <img class="img me-2" src="/src/assets/images/logo.png" alt="" /><span
+            class="font"
+          >
+            Ogun State <br />
+            Government
+          </span>
         </a>
         <li class="nav-item d-block d-md-none d-lg-none">
-              <div class="nav-link">
-                <!-- Search Icon -->
-                <button
-                  @click="toggleSearchInput"
-                  class="btn btn-link text-dark"
-                >
-                  <i class="fas fa-search"></i>
-                </button>
+          <div class="nav-link">
+            <!-- Search Icon -->
+            <button @click="toggleSearchInput" class="btn btn-link text-dark">
+              <i class="fas fa-search"></i>
+            </button>
 
-                <!-- Conditional Rendering of Search Input -->
-                <transition name="fade">
-                  <input
-                    v-if="showSearchInput"
-                    type="text"
-                    class="form-control"
-                    placeholder="Search..."
-                    v-model="searchQuery"
-                  />
-                </transition>
-              </div>
-            </li>
+            <!-- Conditional Rendering of Search Input -->
+            <transition name="fade">
+              <input
+                v-if="showSearchInput"
+                type="text"
+                class="form-control"
+                placeholder="Search..."
+                v-model="searchQuery"
+              />
+            </transition>
+          </div>
+        </li>
         <!-- Navbar Toggler -->
         <button
           class="navbar-toggler"
@@ -50,7 +51,7 @@
                 Home
               </RouterLink>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -61,23 +62,9 @@
               >
                 Service
               </a>
-              <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
-                <li>
-                  <RouterLink to="/service1"  class="dropdown-item"
-                    >Service 1</RouterLink
-                  >
-                </li>
-                <li>
-                  <RouterLink to="/service2" class="dropdown-item"
-                    >Service 2</RouterLink
-                  >
-                </li>
-                <li>
-                  <RouterLink to="/service3" class="dropdown-item"
-                    >Service 3</RouterLink
-                  >
-                </li>
-              </ul>
+            </li> -->
+            <li class="nav-item">
+              <RouterLink to="/" class="nav-link">Service</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink to="/about" class="nav-link">About</RouterLink>
@@ -111,16 +98,85 @@
               </div>
             </li>
           </ul>
-          <div class="d-lg-none w-100 text-center my-2">
-            <button class="btn btn-md btn-success text">Quick link</button>
-          </div>
-          <div class="d-none d-lg-block">
-            <button class="btn btn-md btn-success text">Quick link</button>
+          <div>
+            <!-- For smaller screens -->
+            <div class="d-lg-none w-100 text-center my-2">
+              <div class="dropdown">
+                <button
+                  class="btn btn-md btn-success dropdown-toggle"
+                  type="button"
+                  id="quickLinkDropdownSm"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Quick link
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="quickLinkDropdownSm">
+                  <li>
+                    <router-link class="dropdown-item" to="/openView"
+                      >Government</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link class="dropdown-item" to="/mda"
+                      >MDA</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link class="dropdown-item" to="/executives"
+                      >Executives</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link class="dropdown-item" to="/emergency"
+                      >Emergency No</router-link
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- For larger screens -->
+            <div class="d-none d-lg-block">
+              <div class="dropdown">
+                <button
+                  class="btn btn-md btn-success dropdown-toggle"
+                  type="button"
+                  id="quickLinkDropdownLg"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Quick link
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="quickLinkDropdownLg">
+                  <li>
+                    <router-link class="dropdown-item" to="/openView"
+                      >Government</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link class="dropdown-item" to="/mda"
+                      >MDA</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link class="dropdown-item" to="/executives"
+                      >Executives</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link class="dropdown-item" to="/emergency"
+                      >Emergency No</router-link
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </nav>
-     </header>
+  </header>
 </template>
 
 <script>
@@ -141,7 +197,7 @@ export default {
 </script>
 
 <style scoped>
-*{
+* {
   margin: 0;
 }
 .font {
@@ -168,16 +224,16 @@ input[type="text"]:focus {
 .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
   opacity: 0;
 }
-.navbar{
+.navbar {
   margin-top: -15px;
 }
 @media (min-width: 768px) {
-  .position{
-  position: fixed;
-  z-index: 1000;
-  left: 30px;
-  right: 30px;
-  top: 0;
-}
+  .position {
+    position: fixed;
+    z-index: 1000;
+    left: 30px;
+    right: 30px;
+    top: 0;
+  }
 }
 </style>

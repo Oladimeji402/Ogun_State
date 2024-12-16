@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NewsPage from '../views/Newpage.vue'
 import contactView from "../views/contactView.vue"
-import OpenVeiw from '@/views/OpenVeiw.vue'
+import OpenView from '@/views/OpenView.vue'
 
 
 const router = createRouter({
@@ -32,9 +32,9 @@ const router = createRouter({
       component: contactView,
     },
     {
-      path: '/openVeiw',
-      name: 'openVeiw',
-      component: OpenVeiw,
+      path: '/openView',
+      name: 'openView',
+      component: OpenView,
     }
   ],
 })
