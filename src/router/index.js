@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import NewsPage from '../views/Newpage.vue'
 import contactView from "../views/contactView.vue"
 import OpenView from '@/views/OpenView.vue'
+import EmergencyView from '../views/EmergencView.vue'
 
 
 const router = createRouter({
@@ -35,6 +36,11 @@ const router = createRouter({
       path: '/openView',
       name: 'openView',
       component: OpenView,
+    },
+    {
+      path: '/emergency',
+      name: 'EmergencyView',
+      component: EmergencyView,
     }
   ],
 })

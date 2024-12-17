@@ -200,6 +200,12 @@ export default {
 * {
   margin: 0;
 }
+/* nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+} */
 .font {
   font-size: 14px;
 }
